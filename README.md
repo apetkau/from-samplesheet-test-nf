@@ -17,7 +17,7 @@ Now, you can follow the below instructions to test out different cases.
 To extract running times for paired-end data:
 
 ```bash
-time nextflow run apetkau/from-samplesheet-test-nf -r main --input https://raw.githubusercontent.com/apetkau/from-samplesheet-test-nf/main/samplesheet.pe.30.csv
+time nextflow run apetkau/from-samplesheet-test-nf -r main --input https://raw.githubusercontent.com/apetkau/from-samplesheet-test-nf/main/samplesheet.pe.30.csv --outdir results
 ```
 
 For me, this takes ~5 seconds.
@@ -50,7 +50,7 @@ Compare the above run-times to the single-end cases.
 ### Case: 30 single-end samples
 
 ```bash
-time nextflow run apetkau/from-samplesheet-test-nf -r main --input https://raw.githubusercontent.com/apetkau/from-samplesheet-test-nf/main/samplesheet.se.30.csv
+time nextflow run apetkau/from-samplesheet-test-nf -r main --input https://raw.githubusercontent.com/apetkau/from-samplesheet-test-nf/main/samplesheet.se.30.csv --outdir results
 ```
 
 ```
