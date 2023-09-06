@@ -1,11 +1,5 @@
 include { validateParameters; paramsHelp; paramsSummaryLog; fromSamplesheet } from 'plugin/nf-validation'
 
-// Print help message, supply typical command line usage for the pipeline
-if (params.help) {
-   log.info paramsHelp("nextflow run my_pipeline --input input_file.csv")
-   exit 0
-}
-
 // Validate input parameters
 validateParameters()
 
